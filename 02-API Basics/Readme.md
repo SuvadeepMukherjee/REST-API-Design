@@ -17,3 +17,16 @@ There are 4 different types of api
 3. Remote API 
 4. Web API
 
+#### Operating System API 
+
+Lets say we write some kind of application (The platform does not matter).Our application runs inside an operating system .In many cases the application needs some kind of services from the operating system .
+
+- File System 
+  - Our application wants to access files in the operating system , it asks the operating system to give it access to the files
+
+- Network devices
+  - If the application needs to access network devices connected to the operating system then the operating system should allow it 
+- User Interface Elements 
+  - If the application for example wants to display a button on the screen then it asks the operating system for a visual representation of the button 
+
+The application gets access to all these services through the operating system API . All Operating Systems expose some kind of API that applications that run in the Operating System can access and use (The win32 api is used by all the applications that run on windows and it provides a huge number of operating system services)
