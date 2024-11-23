@@ -30,3 +30,7 @@ Lets say we write some kind of application (The platform does not matter).Our ap
   - If the application for example wants to display a button on the screen then it asks the operating system for a visual representation of the button 
 
 The application gets access to all these services through the operating system API . All Operating Systems expose some kind of API that applications that run in the Operating System can access and use (The win32 api is used by all the applications that run on windows and it provides a huge number of operating system services)
+
+#### Library API 
+
+When we develop our application we use some kind of libraries (We develop a library say Users library and there is another library called Logging Library) . The Users library wants to use the logging library . The logging library exposes its api (logging api) and the users library can then use it and access logging libraries methods .These libraries are both executed in the same single process ,they are not communicating through any kind of network . Class libraries are implemented in all kinds of development platform like .Net , Python,Java,Node.js
